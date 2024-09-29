@@ -69,6 +69,7 @@ echo "<VirtualHost *:80>
 
 # Activation du site GLPI et modules nécessaires
 a2ensite glpi.conf
+a2dissite 000-default.conf
 a2enmod rewrite proxy_fcgi setenvif
 a2enconf php8.2-fpm
 
